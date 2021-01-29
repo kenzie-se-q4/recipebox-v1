@@ -29,6 +29,7 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
 
 *   Python 3.9, latest version of Django (3.1.2 as of this writing)
 *   Start a project with `django-admin startproject {project name} .` -- note the period at the end! (for example, `django-admin startproject recipebox .`)
+*   Start an app with `python manage.py startapp {app name}` (for example, `python manage.py startapp recipe_app`)
 *   Start the server with `python manage.py runserver`
 *   After you create your models, run `python manage.py makemigrations {foldername}` (where foldername is the top-level folder for your project) to create them, then `python manage.py migrate` to push them to the db. If you get stuck, delete the db and run the command again
 *   If you change your models after running the migrations, run makemigrations and migrate again. If the migrations require the creation of a new table, django will automatically handle it
