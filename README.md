@@ -38,7 +38,7 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
 *   Make sure that every detail page (author and recipe) has its own unique URL. If you reload the URL, the same page should appear -- no modals or manipulating the current information on the page. That's too complicated for what we're trying to achieve.
 *   REITERATING: There are no extra points for pretty HTML! Don't spend time making everything on the front end look gorgeous; we just want to make sure we're serving the right information.
 *   Please don't commit any extraneous files! It's best practice to use a .gitignore file to keep a clean repository. In this project, a .gitignore file is already included.  For future projects, always confirm that a .gitignore file exists in the root directory of your project including the following contents:
-<details>
+* <details>
    <summary markdown="span">.gitignore contents</summary>
    <pre># Inspired by https://www.toptal.com/developers/gitignore/api/venv,linux,macos,django,python,visualstudiocode,pycharm
    
