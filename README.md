@@ -194,7 +194,7 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
 
         # Pyre type checker
         .pyre/
-        </pre>
+   </pre>
 </details>
 
 Author model:
