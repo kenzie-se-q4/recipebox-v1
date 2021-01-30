@@ -51,8 +51,10 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
   local_settings.py
   db.sqlite3
   db.sqlite3-journal
+  </pre><pre>
   # pyenv
   .python-version
+  </pre>
   # Environments
   .env
   .venv
