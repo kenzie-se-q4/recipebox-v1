@@ -40,7 +40,7 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
 *   Please don't commit any extraneous files! It's best practice to use a .gitignore file to keep a clean repository. In this project, a .gitignore file is already included.  For future projects, always confirm that a .gitignore file exists in the root directory of your project including the following contents:
 * <details>
    <summary markdown="span">.gitignore contents</summary>
-   <pre># Inspired by https://www.toptal.com/developers/gitignore/api/venv,linux,macos,django,python,visualstudiocode,pycharm
+   <code># Inspired by https://www.toptal.com/developers/gitignore/api/venv,linux,macos,django,python,visualstudiocode,pycharm
    
         # Django
         *.log
@@ -194,7 +194,7 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
 
         # Pyre type checker
         .pyre/
-   </pre>
+   </code>
 </details>
 
 Author model:
