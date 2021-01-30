@@ -42,158 +42,158 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
    <summary markdown="span">.gitignore contents</summary>
    # Inspired by https://www.toptal.com/developers/gitignore/api/venv,linux,macos,django,python,visualstudiocode,pycharm
    
-      # Django
-        *.log
-        *.pot
-        *.py[cod]
-        *$py.class
-        __pycache__/
-        local_settings.py
-        db.sqlite3
-        db.sqlite3-journal
+   # Django
+   *.log
+   *.pot
+   *.py[cod]
+   *$py.class
+   __pycache__/
+   local_settings.py
+   db.sqlite3
+   db.sqlite3-journal
 
-        # pyenv
-        .python-version
+   # pyenv
+   .python-version
 
-        # Environments
-        .env
-        .venv
-        env/
-        venv/
-        ENV/
-        env.bak/
-        venv.bak/
+   # Environments
+   .env
+   .venv
+   env/
+   venv/
+   ENV/
+   env.bak/
+   venv.bak/
 
-        ### VisualStudioCode ###
-        .vscode/
-        !.vscode/settings.json
-        !.vscode/tasks.json
-        !.vscode/launch.json
-        !.vscode/extensions.json
-        *.code-workspace
-        .history
+   ### VisualStudioCode ###
+   .vscode/
+   !.vscode/settings.json
+   !.vscode/tasks.json
+   !.vscode/launch.json
+   !.vscode/extensions.json
+   *.code-workspace
+   .history
 
-        ### PyCharm ###
-        .idea/
+   ### PyCharm ###
+   .idea/
 
-        ### macOS ###
-        # General
-        .DS_Store
+   ### macOS ###
+   # General
+   .DS_Store
 
-        ### Linux ###
-        *~
+   ### Linux ###
+   *~
 
-        # temporary files which can be created if a process still has a handle open of a deleted file
-        .fuse_hidden*
+   # temporary files which can be created if a process still has a handle open of a deleted file
+   .fuse_hidden*
 
-        # KDE directory preferences
-        .directory
+   # KDE directory preferences
+   .directory
 
-        # Linux trash folder which might appear on any partition or disk
-        .Trash-*
+   # Linux trash folder which might appear on any partition or disk
+   .Trash-*
 
-        # .nfs files are created when an open file is removed but is still being accessed
-        .nfs*
+   # .nfs files are created when an open file is removed but is still being accessed
+   .nfs*
         
-        # C extensions
-        *.so
+   # C extensions
+   *.so
         
-        # Distribution / packaging
-        .Python
-        build/
-        develop-eggs/
-        dist/
-        downloads/
-        eggs/
-        .eggs/
-        lib/
-        lib64/
-        parts/
-        sdist/
-        var/
-        wheels/
-        pip-wheel-metadata/
-        share/python-wheels/
-        *.egg-info/
-        .installed.cfg
-        *.egg
-        MANIFEST
+   # Distribution / packaging
+   .Python
+   build/
+   develop-eggs/
+   dist/
+   downloads/
+   eggs/
+   .eggs/
+   lib/
+   lib64/
+   parts/
+   sdist/
+   var/
+   wheels/
+   pip-wheel-metadata/
+   share/python-wheels/
+   *.egg-info/
+   .installed.cfg
+   *.egg
+   MANIFEST
         
-        # PyInstaller
-        #  Usually these files are written by a python script from a template
-        #  before PyInstaller builds the exe, so as to inject date/other infos into it.
-        *.manifest
-        *.spec
+   # PyInstaller
+   #  Usually these files are written by a python script from a template
+   #  before PyInstaller builds the exe, so as to inject date/other infos into it.
+   *.manifest
+   *.spec
         
-        # Installer logs
-        pip-log.txt
-        pip-delete-this-directory.txt
+   # Installer logs
+   pip-log.txt
+   pip-delete-this-directory.txt
         
-        # Unit test / coverage reports
-        htmlcov/
-        .tox/
-        .nox/
-        .coverage
-        .coverage.*
-        .cache
-        nosetests.xml
-        coverage.xml
-        *.cover
-        *.py,cover
-        .hypothesis/
-        .pytest_cache/
+   # Unit test / coverage reports
+   htmlcov/
+   .tox/
+   .nox/
+   .coverage
+   .coverage.*
+   .cache
+   nosetests.xml
+   coverage.xml
+   *.cover
+   *.py,cover
+   .hypothesis/
+   .pytest_cache/
         
-        # Translations
-        *.mo
-        *.pot
+   # Translations
+   *.mo
+   *.pot
+   
+   # Flask stuff:
+   instance/
+   .webassets-cache
         
-        # Flask stuff:
-        instance/
-        .webassets-cache
+   # Scrapy stuff:
+   .scrapy
         
-        # Scrapy stuff:
-        .scrapy
+   # Sphinx documentation
+   docs/_build/
         
-        # Sphinx documentation
-        docs/_build/
+   # PyBuilder
+   target/
         
-        # PyBuilder
-        target/
+   # Jupyter Notebook
+   .ipynb_checkpoints
         
-        # Jupyter Notebook
-        .ipynb_checkpoints
+   # IPython
+   profile_default/
+   ipython_config.py
         
-        # IPython
-        profile_default/
-        ipython_config.py
+   # PEP 582; used by e.g. github.com/David-OConnor/pyflow
+   __pypackages__/
         
-        # PEP 582; used by e.g. github.com/David-OConnor/pyflow
-        __pypackages__/
+   # Celery stuff
+   celerybeat-schedule
+   celerybeat.pid
         
-        # Celery stuff
-        celerybeat-schedule
-        celerybeat.pid
-        
-        # SageMath parsed files
-        *.sage.py
-        
-        # Spyder project settings
-        .spyderproject
-        .spyproject
+   # SageMath parsed files
+   *.sage.py
+   
+   # Spyder project settings
+   .spyderproject
+   .spyproject
 
-        # Rope project settings
-        .ropeproject
+   # Rope project settings
+   .ropeproject
 
-        # mkdocs documentation
-        /site
+   # mkdocs documentation
+   /site
 
-        # mypy
-        .mypy_cache/
-        .dmypy.json
-        dmypy.json
-
-        # Pyre type checker
-        .pyre/
+   # mypy
+   .mypy_cache/
+   .dmypy.json
+   dmypy.json
+   
+   # Pyre type checker
+   .pyre/
 </details>
 
 Author model:
