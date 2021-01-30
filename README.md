@@ -37,15 +37,20 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
 *   Don't go crazy on the front end. The goal is to just handle the database interactions and basic view path
 *   Make sure that every detail page (author and recipe) has its own unique URL. If you reload the URL, the same page should appear -- no modals or manipulating the current information on the page. That's too complicated for what we're trying to achieve.
 *   REITERATING: There are no extra points for pretty HTML! Don't spend time making everything on the front end look gorgeous; we just want to make sure we're serving the right information.
-*   Please don't commit any extraneous files! It's best practice to use a .gitignore file to keep a clean repository.
-    *   We're going to be committing the db.sqlite3 file. This file wouldn't typically be committed in a development/production environment. For educational purposes, we'll _won't_ add <span>db.sqlite3 to our .gitignore file. We want it to be to show up in your GitHub repos.</span>
-    *   Create a `.gitignore` file that includes the text below:
-    *   <pre># Inspired by https://www.toptal.com/developers/gitignore/api/venv,linux,macos,django,python,visualstudiocode,pycharm
-        ### Django ###
+*   Please don't commit any extraneous files! It's best practice to use a .gitignore file to keep a clean repository. In this project, a .gitignore file is already included.  For future projects, always confirm that a .gitignore file exists in the root directory of your project including the following contents:
+<details>
+   <summary markdown="span">.gitignore contents</summary>
+   <pre># Inspired by https://www.toptal.com/developers/gitignore/api/venv,linux,macos,django,python,visualstudiocode,pycharm
+   
+        # Django
         *.log
         *.pot
-        *.pyc
+        *.py[cod]
+        *$py.class
         __pycache__/
+        local_settings.py
+        db.sqlite3
+        db.sqlite3-journal
 
         # pyenv
         .python-version
@@ -56,6 +61,8 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
         env/
         venv/
         ENV/
+        env.bak/
+        venv.bak/
 
         ### VisualStudioCode ###
         .vscode/
@@ -87,7 +94,108 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
 
         # .nfs files are created when an open file is removed but is still being accessed
         .nfs*
+        
+        # C extensions
+        *.so
+        
+        # Distribution / packaging
+        .Python
+        build/
+        develop-eggs/
+        dist/
+        downloads/
+        eggs/
+        .eggs/
+        lib/
+        lib64/
+        parts/
+        sdist/
+        var/
+        wheels/
+        pip-wheel-metadata/
+        share/python-wheels/
+        *.egg-info/
+        .installed.cfg
+        *.egg
+        MANIFEST
+        
+        # PyInstaller
+        #  Usually these files are written by a python script from a template
+        #  before PyInstaller builds the exe, so as to inject date/other infos into it.
+        *.manifest
+        *.spec
+        
+        # Installer logs
+        pip-log.txt
+        pip-delete-this-directory.txt
+        
+        # Unit test / coverage reports
+        htmlcov/
+        .tox/
+        .nox/
+        .coverage
+        .coverage.*
+        .cache
+        nosetests.xml
+        coverage.xml
+        *.cover
+        *.py,cover
+        .hypothesis/
+        .pytest_cache/
+        
+        # Translations
+        *.mo
+        *.pot
+        
+        # Flask stuff:
+        instance/
+        .webassets-cache
+        
+        # Scrapy stuff:
+        .scrapy
+        
+        # Sphinx documentation
+        docs/_build/
+        
+        # PyBuilder
+        target/
+        
+        # Jupyter Notebook
+        .ipynb_checkpoints
+        
+        # IPython
+        profile_default/
+        ipython_config.py
+        
+        # PEP 582; used by e.g. github.com/David-OConnor/pyflow
+        __pypackages__/
+        
+        # Celery stuff
+        celerybeat-schedule
+        celerybeat.pid
+        
+        # SageMath parsed files
+        *.sage.py
+        
+        # Spyder project settings
+        .spyderproject
+        .spyproject
+
+        # Rope project settings
+        .ropeproject
+
+        # mkdocs documentation
+        /site
+
+        # mypy
+        .mypy_cache/
+        .dmypy.json
+        dmypy.json
+
+        # Pyre type checker
+        .pyre/
         </pre>
+</details>
 
 Author model:
 
