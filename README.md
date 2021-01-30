@@ -40,8 +40,8 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
 *   Please don't commit any extraneous files! It's best practice to use a .gitignore file to keep a clean repository. In this project, a .gitignore file is already included.  For future projects, always confirm that a .gitignore file exists in the root directory of your project including the following contents:
 * <details>
    <summary markdown="span">.gitignore contents</summary>
+   <pre>
    # Inspired by https://www.toptal.com/developers/gitignore/api/venv,linux,macos,django,python,visualstudiocode,pycharm
-   
    # Django
    *.log
    *.pot
@@ -51,10 +51,8 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
    local_settings.py
    db.sqlite3
    db.sqlite3-journal
-
    # pyenv
    .python-version
-
    # Environments
    .env
    .venv
@@ -63,7 +61,6 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
    ENV/
    env.bak/
    venv.bak/
-
    ### VisualStudioCode ###
    .vscode/
    !.vscode/settings.json
@@ -72,32 +69,23 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
    !.vscode/extensions.json
    *.code-workspace
    .history
-
    ### PyCharm ###
    .idea/
-
    ### macOS ###
    # General
    .DS_Store
-
    ### Linux ###
    *~
-
    # temporary files which can be created if a process still has a handle open of a deleted file
    .fuse_hidden*
-
    # KDE directory preferences
    .directory
-
    # Linux trash folder which might appear on any partition or disk
    .Trash-*
-
    # .nfs files are created when an open file is removed but is still being accessed
-   .nfs*
-        
+   .nfs*   
    # C extensions
    *.so
-        
    # Distribution / packaging
    .Python
    build/
@@ -117,18 +105,15 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
    *.egg-info/
    .installed.cfg
    *.egg
-   MANIFEST
-        
+   MANIFEST   
    # PyInstaller
    #  Usually these files are written by a python script from a template
    #  before PyInstaller builds the exe, so as to inject date/other infos into it.
    *.manifest
-   *.spec
-        
+   *.spec 
    # Installer logs
    pip-log.txt
-   pip-delete-this-directory.txt
-        
+   pip-delete-this-directory.txt  
    # Unit test / coverage reports
    htmlcov/
    .tox/
@@ -141,59 +126,45 @@ So we have three types of pages: a simple list view, a recipe detail view, and a
    *.cover
    *.py,cover
    .hypothesis/
-   .pytest_cache/
-        
+   .pytest_cache/  
    # Translations
    *.mo
    *.pot
-   
    # Flask stuff:
    instance/
-   .webassets-cache
-        
+   .webassets-cache   
    # Scrapy stuff:
    .scrapy
-        
    # Sphinx documentation
-   docs/_build/
-        
+   docs/_build/  
    # PyBuilder
-   target/
-        
+   target/    
    # Jupyter Notebook
    .ipynb_checkpoints
-        
    # IPython
    profile_default/
-   ipython_config.py
-        
+   ipython_config.py 
    # PEP 582; used by e.g. github.com/David-OConnor/pyflow
-   __pypackages__/
-        
+   __pypackages__/   
    # Celery stuff
    celerybeat-schedule
-   celerybeat.pid
-        
+   celerybeat.pid  
    # SageMath parsed files
    *.sage.py
-   
    # Spyder project settings
    .spyderproject
    .spyproject
-
    # Rope project settings
    .ropeproject
-
    # mkdocs documentation
    /site
-
    # mypy
    .mypy_cache/
    .dmypy.json
    dmypy.json
-   
    # Pyre type checker
    .pyre/
+   </pre>
 </details>
 
 Author model:
